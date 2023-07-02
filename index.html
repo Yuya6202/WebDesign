@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      h2 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .login-form {
+        width: 300px;
+        height: 250px;
+        border: 5px solid black;
+        /* centering the element on the page starts here */
+        margin-top: 50%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        /* centering the element on the page ends here */
+      }
+      .inner {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        background-color: orange;
+        /* horizontally centered the element with margin left/right starts here */
+        margin-left: auto;
+        margin-right: auto;
+        /* horizontally centered the element with margin left/right ends here */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-form">
+      <h2>Login Form</h2>
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

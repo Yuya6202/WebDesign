@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Combinator</title>
+    <style>
+      .box a {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Descendant Combinator : Select all the elements that are descendant of a
+    specified element, and a single space (" ") is used. -->
+
+    <div class="box">
+      <a href="a">anchor tag</a> <br />
+      <a href="a">anchor tag</a> <br />
+      <a href="a">anchor tag</a> <br />
+    </div>
+    <a href="a">anchor tag</a> <span>this anchor tag won't be affected.</span>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjacent Sibling</title>
+    <style>
+      div + span {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- select an element that is directly after another specific element, and (+) is used -->
+    <div>
+      <h2>Hello</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        alias sit dolores <span>maxime neque ipsum architecto,</span> eaque sint
+        nesciunt doloribus quo nam inventore eveniet facere possimus fuga vero
+        et fugit.
+      </p>
+      <span>span inside div</span>
+    </div>
+    <span>span 1 outside div</span> <br />
+    <span>span 2 outside div</span>
+  </body>
+</html>

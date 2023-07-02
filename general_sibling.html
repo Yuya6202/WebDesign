@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling</title>
+    <style>
+      div ~ p {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Selects elements at the same hierarchy, and ( ~ ) is used. -->
+    <p>this is first paragraph</p>
+    <div>this paragraph is inside the div</div>
+    <p>this paragraph is the general sibling of the div</p>
+    <span>this is a span element</span>
+    <p>this paragraph is also general sibling of the div</p>
+  </body>
+</html>

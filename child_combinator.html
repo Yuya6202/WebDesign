@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Combinator</title>
+    <style>
+      span {
+        color: orangered;
+      }
+      div > span {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Select all the elements that are the direct children of a specified element,
+    and ( > ) is used. 
+    here, even though space 2 is inside the div, its bg color
+    will not be skyblue, since it is not the direct child of the div. -->
+
+    <div>
+      <span>
+        span-1, in the div
+        <span> span-2, in the span which is in the div </span>
+      </span>
+    </div>
+    <span> span-3, outside of the div </span>
+  </body>
+</html>
