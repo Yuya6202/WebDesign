@@ -5,21 +5,13 @@ h1 {
   text-align: center;
 }
 
-dt {
-  font-size: x-large;
-  font-weight: 900;
-  color: rgb(74, 151, 74);
-}
-dd {
-  font-size: larger;
-  font-weight: bold;
-}
-
 h1,
 h2 {
   color: rgb(74, 151, 74);
   font-family: "Merriweather", serif;
+  text-transform: capitalize;
 }
+
 .name {
   font-style: italic;
 }
@@ -28,6 +20,9 @@ ul,
 ol {
   font-size: large;
   font-weight: bold;
+}
+.paragraphs {
+  text-indent: 3em;
 }
 footer p {
   text-align: center;

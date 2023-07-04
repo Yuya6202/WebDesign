@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>HTML Form Element</h2>
+    <!-- input => text, email, tel, url, date, color, number, range, reset,
+       radio,submit, password, checkbox, hidden  -->
+    <form action="">
+      <fieldset>
+        <legend>Login Form</legend>
+        <div>
+          <label for="">Name</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input type="password" />
+        </div>
+
+        <div>
+          <input type="submit" value="Login" />
+          <input type="reset" value="Clear" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div>
+          <label for="">Email</label>
+          <input type="email" />
+        </div>
+        <div>
+          <label for="">Age</label>
+          <input type="number" min="1" max="32" />
+          <!-- <input type="range" min="1" max="32"/> -->
+        </div>
+        <div>
+          <label>DOB</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label for="">Gender</label>
+          <input type="radio" name="gender" />Male
+          <input type="radio" name="gender" />Female
+        </div>
+        <div>
+          <label for="">Skills</label>
+          <input type="checkbox" name="" id="" />HTML
+          <input type="checkbox" name="" id="" />CSS
+          <input type="checkbox" name="" id="" />JS
+          <input type="checkbox" name="" id="" />Bootstrap
+        </div>
+        <div>
+          <label for="">Favorite Color</label>
+          <input type="color" />
+        </div>
+        <div>
+          <label for="">Address</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
