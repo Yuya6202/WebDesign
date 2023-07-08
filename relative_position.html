@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>relative positioning</title>
+    <style>
+      .main-element {
+        position: relative;
+        left: 10px;
+        bottom: 10px;
+        background-color: yellow;
+        padding: 20px;
+        z-index: -1;
+      }
+
+      .sibling-element {
+        padding: 20px;
+        background-color: #0386f8;
+      }
+    </style>
+</head>
+<body>
+  <!-- Relative Elements remain in the normal flow of the
+    document. But, unlike static elements, the left, right, top, bottom and
+    z-index properties affect the position of the element. An offset, based on
+    the values of left, right, top and bottom properties, is applied to the
+    element relative to itself. -->
+
+    <div class="parent-element">
+      <div class="sibling-element">simple diviion.</div>
+      <div class="main-element">main division here.</div>
+      <div class="sibling-element">another simple division</div>
+    </div>
+</body>
+</html>

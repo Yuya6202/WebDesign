@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-element {
+        /* position: static; 
+        left: 10px;   
+        top: 10px; */
+        background-color: yellow;
+        padding: 20px;
+      }
+
+      .sibling-element {
+        padding: 20px;
+        background-color: #0386f8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Static : This is the default value for elements. The element is positioned
+    according to the normal flow of the document. The left, right, top, bottom
+    and z-index properties do not affect an element with position: static. -->
+
+    <div class="parent-element">
+      <div class="sibling-element">simple diviion.</div>
+      <div class="main-element">main division here.</div>
+      <div class="sibling-element">another simple division</div>
+    </div>
+  </body>
+</html>

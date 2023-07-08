@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>absolute positioning</title>
+    <style>
+      .parent-element {
+        position: relative;
+        /* height: 100px; */
+        padding: 10px;
+        background-color: #81adc8;
+      }
+      .main-element {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        background-color: yellow;
+        padding: 10px;
+      }
+      .sibling-element {
+        padding: 10px;
+        background-color: #0386f8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- absolute positioned elements are positioned relative to their parent
+    elements. In this case, the element is removed from the normal document
+    flow. The other elements will behave as if that element is not in the
+    document. No space is created for the element in the page layout. The values
+    of left, top, bottom and right determine the final position of the element.
+	Usually absolutely positioned elements require explicit height and width declarations.
+-->
+
+    <div class="parent-element">
+      <div class="sibling-element">simple diviion.</div>
+      <div class="main-element">main division here.</div>
+      <div class="sibling-element">another simple division</div>
+    </div>
+  </body>
+</html>

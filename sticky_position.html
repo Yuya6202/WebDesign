@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sticky positioning</title>
+    <style>
+      .main-element {
+        position: sticky;
+        top: 10px;
+        background-color: yellow;
+        padding: 10px;
+      }
+      .parent-element {
+        position: relative;
+        height: 800px;
+        padding: 50px 10px;
+        background-color: #81adc8;
+      }
+
+      .sibling-element {
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- position: sticky is a mix of position: relative and position: fixed. 
+		It acts like a relatively positioned element until a certain scroll point 
+		and then it acts like a fixed element. -->
+
+    <div class="parent-element">
+      <div class="sibling-element">simple diviion.</div>
+      <div class="main-element">main division here.</div>
+      <div class="sibling-element">another simple division</div>
+    </div>
+  </body>
+</html>

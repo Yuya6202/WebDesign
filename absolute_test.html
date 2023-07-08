@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .one {
+        background-color: blue;
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        z-index: -4;
+      }
+      .two {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box one"></div>
+      <div class="box two"></div>
+    </div>
+  </body>
+</html>

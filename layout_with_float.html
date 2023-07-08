@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout with Float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header,
+      footer {
+        background-color: yellow;
+        text-align: center;
+      }
+      header {
+        height: 80px;
+      }
+      
+      .left {
+        background-color: burlywood;
+        width: 30%;
+        height: 300px;
+        float: left;
+      }
+      .right {
+        background-color: #ffc;
+        height: 300px;
+        width: 70%;
+        float: right;
+      }
+      footer {
+        height: 40px;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>this is header</header>
+      <section class="left">this is left section</section>
+      <section class="right">this is right section</section>
+      <footer>this is footer</footer>
+    </div>
+  </body>
+</html>

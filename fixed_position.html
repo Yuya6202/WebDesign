@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fixed positioning</title>
+    <style>
+      .main-element {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        background-color: yellow;
+        padding: 10px;
+      }
+      html {
+        height: 800px;
+      }
+
+      .sibling-element {
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fixed position elements are similar to absolutely positioned elements. 
+		They are also removed from the normal flow of the document.
+		But unlike absolutely positioned element, they are always positioned 
+		relative to the <html> element. -->
+
+    <div class="parent-element">
+      <div class="sibling-element">simple diviion.</div>
+      <div class="main-element">main division here.</div>
+      <div class="sibling-element">another simple division</div>
+    </div>
+  </body>
+</html>
