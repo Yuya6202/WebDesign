@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop First RWD</title>
+    <style>
+      /* this applies to 1201px and above */
+      body {
+        background: pink;
+      }
+      /* this applies from 993px to 1200px */
+      @media (max-width: 1200px) {
+        body {
+          background: yellow;
+        }
+      }
+      /* this applies from 769px to 992px */
+      @media (max-width: 992px) {
+        body {
+          background: blue;
+        }
+      }
+      /* this applies from 573px to 768px */
+      @media (max-width: 768px) {
+        body {
+          background: purple;
+        }
+      }
+      /* this applies from 0px to 572px */
+      @media (max-width: 572px) {
+        body {
+          background: orange;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
